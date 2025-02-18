@@ -323,7 +323,7 @@ if (out_dwd != "") {
 			var range_p = [x_time[0],x_time[time_l]];
 		
 			var layout_p = {
-				width: 350,
+				width: 310,
 				height: 300,
 				margin:{b: 30, l: 40, r:40, t:70, pad:3},
 				title: {text: station + ' , 96 Stunden', font:{size: 11}},
@@ -384,7 +384,7 @@ if (out_dwd != "") {
 			}]
 
 			layoutW = {
-				width: 350,
+				width: 310,
 				height: 300,
 				margin:{b: 30, l: 40, r:40, t:70},
 				title: {text: station + ' , 96 Stunden', font:{size: 11}},
