@@ -53,7 +53,7 @@ function closeFn()
 
 if (out_wsv != "") {
 	var diagram_id = 'https://www.pegelonline.wsv.de/charts/OnlineVisualisierungGanglinie?pegeluuid=' + out_wsv +
-	'&pegelkennwerte=NW,HW,MNW,MHW,MW&dauer=24;2&imgLinien=2&anordnung=block&imgBreite=450&imgHoehe=150&schriftPegelname=11&schriftAchse=11&anzeigeUeberschrift=false\
+	'&pegelkennwerte=NW,HW,MNW,MHW,MW&dauer=24;2&imgLinien=2&anordnung=block&imgBreite=450&imgHoehe=180&schriftPegelname=11&schriftAchse=11&anzeigeUeberschrift=false\
 	&anzeigeDatenquelle=true&schriftLetzterWert=15"';
 
 	var iframe = document.getElementById('g_1');
