@@ -221,8 +221,8 @@ if (out_dwd != "") {
 		document.getElementById("g_22_2").innerHTML = `<span>${feuchte}</span>`;
 		document.getElementById("g_22_3").innerHTML = `<span>${dewpoint}</span>`;
 		document.getElementById("g_22_4").innerHTML = `<span>${precip}</span>`;
-		document.getElementById("g_22_5").innerHTML = `<span>s:${sunshine}<br/>w:${cloud}</span>`;
-		document.getElementById("g_22_6").innerHTML = `<span>${meanwind}<br/>${maxwind}</span>`;
+		document.getElementById("g_22_5").innerHTML = `<span style="font-size:21px">s:${sunshine}<br/>w:${cloud}</span>`;
+		document.getElementById("g_22_6").innerHTML = `<span style="font-size:21px">${meanwind}<br/>${maxwind}</span>`;
 		document.getElementById("g_22_7").innerHTML = `<span>${windzug}°</span>`;
 		document.getElementById("g_2_6").innerHTML = `<img src="assets/windrose-spezial.svg"  style="transform:translate(-50%, -50%)rotate(${winddir}deg)" width="90px" height="90px" ><span style="font-size:16px">${windskala}</span>`;
 		document.getElementById("g_2_7").innerHTML = `<img src="assets/wi-direction-up.svg" style="transform:translate(-50%, -50%)rotate(${windzug}deg)" width="80px" height="80px">`;
