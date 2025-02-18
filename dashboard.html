@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link rel="shortcut icon" href="favicon.ico">
+	<title> Dashboard </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta http-equiv="refresh" content="1200">
+    <link rel="stylesheet" type="text/css" href="css/styles-d.css">
+	<!-- Link to library plotly.js -->
+	<script src="https://cdn.plot.ly/plotly-3.0.0-rc.2.min.js" charset="utf-8"></script>
+	
+</head>
+<body id="body-d">
+    
+<header> 
+	<img src="assets/fragezeichen-blau.png" width="30px" height="30px" onclick = "popupFn()">
+	<img src="assets/back-blau.png" width="30px" height="30px" onclick = "popupBack()">
+	<p>WSV und DWD Dashboard</p>
+</header>
+	<div id="overlay"></div>
+	<div id="popupDialog">
+	        <iframe src = "assets/infotext-d.html" width="500" height="600"> </iframe>
+	        <button class = button-popup onclick="closeFn()">
+	            Close Help
+	        </button>
+			
+	</div>	
+<section id="cont1">
+			<a id="g_top1"></a>
+			<iframe id="g_1"></iframe>		
+</section>
+
+<section id="cont2">
+			<a id="g_top2"></a>
+			<figure id="g_2_1"><img src="assets/wi-thermometer.svg" width="80px" height="80px"></figure>
+			<figure id="g_2_2"><img src="assets/wi-humidity.svg" width="80px" height="80px"></figure>
+			<figure id="g_2_3"><img src="assets/wi-taupunkt-2.svg" width="80px" height="80px"></figure>
+			<figure id="g_2_4"><img src="assets/wi-raindrops.svg" width="100px" height="100px"></figure>
+			<figure id="g_2_5"><img src="assets/wi-day-sunny-overcast.svg" width="80px" height="80px"></figure>
+			<figure id="g_2_6"><img src="assets/windrose-spezial.svg" width="90px" height="90px" ></figure>
+			<figure id="g_2_7"><img src="assets/wi-direction-up.svg" width="80px" height="80px"></figure>
+			
+			<figure id="g_22_1"><span>--</span></figure>
+			<figure id="g_22_2"><span>--</span></figure>
+			<figure id="g_22_3"><span>--</span></figure>
+			<figure id="g_22_4"><span>--</span></figure>
+			<figure id="g_22_5"><span>--</span></figure>
+			<figure id="g_22_6"><span>--</span></figure>
+			<figure id="g_22_7"><span>--</span></figure>
+			
+			<figure id="g_23_1"><span style="font-size:16px">°C</span></figure>
+			<figure id="g_23_2"><span style="font-size:16px">%</span></figure>
+			<figure id="g_23_3"><span style="font-size:16px">°C</span></figure>
+			<figure id="g_23_4"><span style="font-size:16px">mm/h</span></figure>
+			<figure id="g_23_5"><span style="font-size:16px"> min/h % </span></figure>
+			<figure id="g_23_6"><span style="font-size:16px">km/h</span></figure>
+			<figure id="g_23_7"><span style="font-size:16px">Windzug</span></figure>
+</section>
+
+<section id="cont3">
+			<a id="g_top3">DWD Warnmeldungen für:</a>
+			<div id="g_3"></div>
+			
+			    
+			               
+</section>
+		
+<section id="cont4">			
+			<a id="g_top4">DWD Diagramme</a>
+			<figure id="g_4_1"></figure>
+			<figure id="g_4_2"></figure>
+</section>		
+
+<footer> <p> © Martin Knop 2025   --DWD Nutzungsbedingungen: <a href="https://www.dwd.de/DE/service/rechtliche_hinweise/rechtliche_hinweise_node.html" target="_blank"> Deutscher Wetterdienst </a></a>
+		 <a> --WSV Lizenz: <a href="https://www.govdata.de/dl-de/zero-2-0" target="_blank"> DL-DE->Zero-2.0 </a></p>
+</footer>	
+   
+<script type="text/javascript" src="js/script-display.js"></script>
+
+	
+</body>
+</html>

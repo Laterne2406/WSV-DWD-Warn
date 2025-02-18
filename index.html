@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+	
+	<link rel="shortcut icon" href="favicon.ico">
+	<title> WSV-DWD-Warn </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+	
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+	
+	<!-- Link to library plotly.js -->
+	<script src="https://cdn.plot.ly/plotly-3.0.0-rc.2.min.js" charset="utf-8"></script>
+	
+    	
+	<!-- BetterWMS stellt vereinfachte getFeatureInfo-Abfragen für WMS-Layer bereit; alternativ kann z.B. https://github.com/heigeo/leaflet.wms oder eigener Code verwendet werden
+	Die Funktionen wurden angepasst, um JSONP-Anfragen durchzuführen und ausgewählte Elemente der Feature-Info im Popup darzustellen; Änderungen sind in leaflet-betterwms.js entsprechen markiert
+	-->
+	<!--<link rel="manifest" href="js/manifest.json">-->
+	<script src="js/leaflet-betterwms_dj.js"></script>
+	
+	
+</head>
+<body id="body">
+    
+<header> 
+	<img src="assets/fragezeichen-blau.png" width="30px" height="30px" onclick = "popupFn()">
+	<p>Warnlage + Stationsauswahl</p>
+	
+</header>
+	
+<main id="mymap">
+	
+</main>
+
+<aside>
+	<p class="a_top" style="font-size: 18px; font-weight: bold; text-align: center; color: #0072B5">Stationsauswahl mit 'click' <br> in der Karte und 'Select-Knopf' <br> im Popup Fenster</p>
+	<div id="button-grid8">
+		<button class="button"> Reset Auswahl </button>
+	</div>
+	<div id="button-grid7">
+		<button class="button"> Zeige Details </button>
+	</div>
+	<div id="out-info6" class="out-info"><img src="assets/WSVPegel-kl.png" width="30px" height="30px" ></div>
+	<div id="out-info5" class="out-info"><img src="assets/DWDStations.png" width="35px" height="35px" ></div>
+	<div id="out-info4" class="out-info"><img src="icons/Warnung.png" width="35px" height="35px" ></div>
+
+	<div id="overlay"></div>
+	<div id="popupDialog">
+	        <iframe src = "assets/infotext.html" width="500" height="600"> </iframe>
+	        <button class = button-popup onclick="closeFn()">
+	            Close Help
+	        </button>
+			
+	</div>	
+</aside>
+
+<footer> 
+	<p> © Martin Knop 2025   --DWD Nutzungsbedingungen: <a href="https://www.dwd.de/DE/service/rechtliche_hinweise/rechtliche_hinweise_node.html" target="_blank"> Deutscher Wetterdienst </a></a>
+		 <a> --WSV Lizenz: <a href="https://www.govdata.de/dl-de/zero-2-0" target="_blank"> DL-DE->Zero-2.0 </a></p>
+</footer>	
+   
+<script type="text/javascript" src="js/script-select.js"></script>
+	
+</body>
+</html>

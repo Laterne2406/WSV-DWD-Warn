@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="210mm" height="297mm" viewBox="0 0 2100 2970" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs>
+
+	</defs>
+	<svg x="0" y="0" width="2100" height="2970">
+		<g transform="translate(10.00,10.00)">
+		</g>
+	</svg>
+	<svg x="0" y="0" width="2100" height="2970">
+		<g transform="translate(166.60,529.35) scale(1,1) rotate(0.00,900.00,900.00) " fill="none" fill-opacity="1.0" stroke="rgb(0,102,153)" stroke-width="141" stroke-linecap="round" stroke-opacity="1.0">
+			<path fill-rule="evenodd" marker-start="none" marker-end="none" d="M 0.00 900.00 A 900.00 900.00 -0.00 0 1 1800.00 900.00 A 900.00 900.00 0.00 0 1 0.00 900.00  Z">
+			</path>
+		</g>
+		<g transform="translate(835.67,95.17) scale(1,1) rotate(0.00,230.94,200.00) " fill="rgb(0,102,153)" fill-opacity="1.0" stroke="none" stroke-width="2" stroke-linecap="round" stroke-opacity="1.0">
+			<path fill-rule="evenodd" marker-start="none" marker-end="none" d="M 0.00 400.00 L 230.94 0.00 L 461.88 400.00 L 0.00 400.00  Z">
+			</path>
+		</g>
+	</svg>
+</svg>
