@@ -123,6 +123,7 @@ header * {
 	margin: 0.2rem 0.2rem 0.2rem 0.2rem;
 	background: #F1F3F4;
 	grid-row: 2 ;
+	min-width: 380px;
 	width: 98%;
 	height: 285px;
 }
