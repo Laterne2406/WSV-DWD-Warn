@@ -110,7 +110,7 @@ else if (warncellid.charAt(0) == "5"){
 			for(let i=0;i<data.features.length;i++) {
 		    //console.log(data.features[i]);
 			
-			messages += "<div style='position: relative; background: "+ color[data.features[i].properties.SEVERITY]+" '><table style='left'><tr><td>Ereignis:</td><td>" + data.features[i].properties.EVENT +", Meldung von "+new Date(data.features[0].properties.SENT).toLocaleTimeString('de',{hour:"2-digit",minute:"2-digit"})+ "</td></tr>";
+			messages += "<div style='position: relative; background: "+ color[data.features[i].properties.SEVERITY]+" '><table style='left'><tr><td>Ereignis:</td><td>" + data.features[i].properties.HEADLINE + "</td></tr>";
 			messages += "<tr><td><img  style='position: absolute; top: 25px; left:10px' src='icons/" + icon[data.features[i].properties.EC_GROUP] + sever[data.features[i].properties.SEVERITY]+ "' width='35px' height='35px' ></td><td>" + new Date(data.features[i].properties.ONSET).toLocaleString("de-DE") + "</br>";
 			messages += data.features[i].properties.DESCRIPTION + "</td></tr></table></br></div>";
 			};

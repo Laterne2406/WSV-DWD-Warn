@@ -113,13 +113,13 @@ fetch(kueste_url)
 	.then(data => {data;
 	    //console.log(data);
 		for(let i=0;i<data.features.length;i++) {
-	        console.log("Küstenwarnungen: ",data.features[i]);
-			var popupContent = `<h3>${data.features[i].properties.AREADESC} </h3><a> ${data.features[i].properties.HEADLINE}</br> ${data.features[i].properties.DESCRIPTION}</br></br></a>
+	        //console.log("Küstenwarnungen: ",data.features[i]);
+			var popupContent = `<h3>${data.features[i].properties.AREADESC} </h3><a> ${data.features[i].properties.HEADLINE}</br> ${new Date(data.features[i].properties.ONSET).toLocaleString("de-DE")}</br>${data.features[i].properties.DESCRIPTION}</br></br></a>
 			<button class='button-popup' onclick='select_warnings({warncell:"${data.features[i].properties.WARNCELLID}", name:"${data.features[i].properties.AREADESC}"})'> Select Region </button>`;
 			
 			var color={Minor:"yellow",Moderate:"orange",Severe:"red",Extreme:"DarkRed"};
 			var farbe = color[data.features[i].properties.SEVERITY];
-			console.log("Warncell ID: ", data.features[i].properties.WARNCELLID);
+			//console.log("Warncell ID: ", data.features[i].properties.WARNCELLID);
 			L.geoJSON(data.features[i] 
 			
 			,{onEachFeature: function (feature,layer) {layer.bindPopup(popupContent)}, style: {"fillOpacity":0.7 , "color": "#0072B5", "fillColor": "yellow","weight": 1.5, "opacity": 0.6}}).addTo(kuestenlayer);
