@@ -109,6 +109,12 @@ aside {
     border-radius: 5px;
     cursor: pointer;
 }
+.button:active {
+  background-color: #e7f0fa;
+  box-shadow: 5px 5px #666;
+  transform: translateY(4px);
+  color: #0072B5;
+}
 
 /* item class output */
 .out-info {
@@ -165,6 +171,7 @@ main,article,section,aside {
   background-color: #ADD8E6;
   box-shadow: 5px 5px #666;
   transform: translateY(4px);
+  color: #0072B5;
 }
 
 #popupDialog {
