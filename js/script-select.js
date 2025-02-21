@@ -356,9 +356,9 @@ document.querySelector("#button-grid8").addEventListener('click', () => {
 	
 });
 document.querySelector("#button-grid7").addEventListener('click', () => {
-	console.log("out_dwd:" , out_dwd);
-	console.log("out_wsv:" , out_wsv);
-	console.log("warncellID: ", warncellid);
+	//console.log("out_dwd:" , out_dwd);
+	//console.log("out_wsv:" , out_wsv);
+	//console.log("warncellID: ", warncellid);
 	selector();
 });
 
