@@ -159,8 +159,12 @@ main,article,section,aside {
 	border: none;
     font-size: 14px;
     border-radius: 5px;
-	cursor: pointer;
-	
+	cursor: pointer;	
+}
+.button-popup:active {
+  background-color: #ADD8E6;
+  box-shadow: 5px 5px #666;
+  transform: translateY(4px);
 }
 
 #popupDialog {
